@@ -83,6 +83,6 @@ Reads pesttable4html.xlsx to generate html required for pest table in ONVegetabl
 - pesttable4html.xlsx must contain values only (no formulas) in the order as pictured in Pest_DD_table.xlsx
 - Values from 'Pest DD table' can be pasted into pesttable4html.xlsx. Once the file is saved html_gen.py can be run.
 - If run in the console, HTML output will be printed in the console and also saved to wp_pesttable_html.txt in the same working directory.
- > `  >python.exe "full path/html_gen/py"`<br />
+ > `  >python.exe "full path/html_gen.py"`<br />
  > `<figure class="wp-block-table"><table><tbody><tr><td>County</td><td>Carrot Rust Fly</td><td>Onion Maggot</td><td>Carrot Weevil</td><td>Aster Leafhopper</td><td>Tarnished Plant Bug</td><td>Cabbage Maggot</td>......`
 
