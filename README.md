@@ -2,7 +2,7 @@
 
 **** Mariaelisa Polsinelli for OMAFRA, 2022 *****
 
-***The scripts below should be run in the listed order and will be if executing the update_dashboard_files.bat - be sure to update .bat file with the respective file paths on your computer***
+***The files below should be run in the listed order and will be if executing the update_dashboard_files.bat - be sure to update .bat file with the respective file paths on your computer***
 
 **running 3.update_vcr_dashboard.R before running 1. and 2. may result in errors**
 
@@ -50,7 +50,7 @@ station longitude and latitude can be obtained from ECCC weather stations.
 --------------------------------------
 Updates or generates new .csv called "vcr_dashboard_data.csv" for the dasboard<br />
 -> set working directory before running for the first time<br />
--> If generating a new .csv, at least 11 years of weather satation data are required (make sure to edit years in scripts 1. and 2.)<br />
+-> If generating a new .csv, at least 11 years of weather satation data are required (make sure to edit years in 1. and 2.)<br />
 -> Assumes all weather stations are updated to the same day<br />
 
 To add a new weather station, add new county name to the 'station_list' varaible with quotations ""<br />
@@ -65,13 +65,13 @@ creates a .csv file with the averages of the last 11 full years of data (e.g. if
 Will then be summed in PowerBI to show cumulative averages.<br />
 -> set working directory before running for the first time<br />
 
--> This script only needs to be run once at the beginning of the year to generate a .csv file with data from the past 10 year range. <br /> I.e. if the year is 2022, the 10 year average is calculated from 2011-2021<br />
+-> This code only needs to be run once at the beginning of the year to generate a .csv file with data from the past 10 year range. <br /> I.e. if the year is 2022, the 10 year average is calculated from 2011-2021<br />
 -> But can be run again if new weather station is added
 
 -> generates or updates ten_year_averages.csv
 
 -------------------------------------
-Running update_dashboard_files.bat will run each script in order in the background and can be scheduled with a task scheduler to run daily.
+Running update_dashboard_files.bat will run each file in order in the background and can be scheduled with a task scheduler to run daily.
 -------------------------------------
 
 # Files for VCR(Vegetable Crop Report) Pest Threshold table
