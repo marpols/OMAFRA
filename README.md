@@ -1,4 +1,4 @@
-# OMAFRA - Files for ONVegetables Blog PowerBi Weather Dashboard
+# Files for ONVegetables Blog PowerBi Weather Dashboard
 
 **** Mariaelisa Polsinelli for OMAFRA, 2022 *****
 
@@ -71,7 +71,7 @@ Will then be summed in PowerBI to show cumulative averages.<br />
 -> generates or updates ten_year_averages.csv
 
 -------------------------------------
-Running update_dashboard_files.bat will run each script in order in the background and can be scheduled with a task scheduler to update daily.
+Running update_dashboard_files.bat will run each script in order in the background and can be scheduled with a task scheduler to run daily.
 -------------------------------------
 
 # Files for VCR(Vegetable Crop Report) Pest Threshold table
@@ -79,6 +79,10 @@ Running update_dashboard_files.bat will run each script in order in the backgrou
 html_gen.py
 
 Reads pesttable4html.xlsx to generate html required for pest table in ONVegetables VCR blog posts.
+- update html_gen.py for the new path to pesttable4html.xlsx
 - pesttable4html.xlsx must contain values only (no formulas) in the order as pictured in Pest_DD_table.xlsx
 - Values from 'Pest DD table' can be pasted into pesttable4html.xlsx. Once the file is saved html_gen.py can be run.
 - If run in the console, HTML output will be printed in the console and also saved to wp_pesttable_html.txt in the same working directory.
+ > `  >python.exe "full path/html_gen/py"`<br />
+ > `<figure class="wp-block-table"><table><tbody><tr><td>County</td><td>Carrot Rust Fly</td><td>Onion Maggot</td><td>Carrot Weevil</td><td>Aster Leafhopper</td><td>Tarnished Plant Bug</td><td>Cabbage Maggot</td>......`
+
